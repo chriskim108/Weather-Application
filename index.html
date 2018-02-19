@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+    <!-- NAVBAR WITH DROPDOWN -->
+    <nav class="navbar navbar-default" id="navigation_bar">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand navbar-link nav_weather">
+                    <i class="fa fa-sun-o img-responsive" aria-hidden="true"></i> <strong>Weather App</strong>
+                </a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                    
+                </button>
+            </div>
+
+            <div class="collpase navbar-collapse" id="navcol">
+                <ul class="nav navbar-nav navbar-right" id="nav_list">
+                    <li><a href="current.html" >Current</a></li>
+                    <li><a href="forecast.html" >Forecast</a></li>
+                    <li><a href="https://openweathermap.org" >Open Weather Map</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row" id="main-background">
+        <div class="col-md-12" id="colText">
+            <h2 class="text-center" id="mainText1"></h2>
+            <h2 class="text-center" id="mainText2"></h2>
+
+            <ul class="list-inline" id="list_item">
+                <li id="list1"></li>
+                <li id="list2"></li>
+                <li id="list3"></li>
+                <li id="list4"></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-bottom:100px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-primary" style="margin-top:40px;">Welcome To Christopher's Weather Application</h2>
+                <p class="text-center" id="welcome-paragraph">Chris's Weather app is a web-based application that allows users to search for current weather &nbsp; information of different cities around the world. Users can search for weather information by the cities name. Chris's weather app uses the openweathermap API which can be found at <a href="https://openweathermap.org">openweathermap</a> </p>
+            </div>
+        </div>
+
+        <div class="row" id="rowDiv">
+            <div class="col-md-4" id="colDescription">
+                <div class="info-icon"><i class="fa fa-sun-o"></i></div>
+                <h3 class="text-center">Weather API</h3>
+                <p class="text-center">Use openweathermap API to get weather information of any city</p>
+            </div>
+
+            <div class="col-md-4" id="colDescription">
+                <div class="info-icon"><i class="fa fa-search"></i></div>
+                <h3 class="text-center">Search</h3>
+                <p class="text-center">Search for current weather information and weather forecasts</p>
+            </div>
+
+            <div class="col-md-4" id="colDescription">
+                <div class="info-icon"><i class="fa fa-chevron-circle-down"></i></div>
+                <h3 class="text-center">View Results</h3>
+                <p class="text-center">Get information about temperature, pressure, humidity, and more</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row text-center" style="padding-top:30px;">
+                <p style="color:white;">Copyright &copy; Christopher Kim</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="typed.js"></script>
+    <script src="script.js">   </script>
+</body>
+</html>
