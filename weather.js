@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 
-// AJAX
+// AJAX Request
 function getWeather(){
     // Getting the value from the input field
     var city = $("#city").val();
